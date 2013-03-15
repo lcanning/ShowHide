@@ -5,7 +5,27 @@
 	<title>ShowHide Example</title>
 	
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#hide-heading").click(function() {
+				$("#heading").hide(3000);
+			});
+			$("#show-heading").click(function() {
+				$("#heading").show(1000);
+			});
+			$("#toggle-heading").click(function() {
+				$("#heading").toggle(1000);
+			});
+			$("#slide-up").click(function() {
+				$("#heading").slideUp(3000);
+			});
+			$("#slide-down").click(function() {
+				$("#heading").slideDown(3000);
+			});
+		});
 	
+	</script>
+
 	<style media="screen">
 		ul { list-style: none; }	
 	</style>	
@@ -23,6 +43,8 @@
    <li><a href="#" id="hide-heading">Hide</a></li>
    <li><a href="#" id="show-heading">Show</a></li>
    <li><a href="#" id="toggle-heading">Toggle</a></li>
+   <li><a href="#" id="slide-up">Slide up</a></li>
+   <li><a href="#" id="slide-down">Slide down</a></li>
 </ul>
 </div>
 
